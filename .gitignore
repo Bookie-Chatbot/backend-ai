@@ -2,9 +2,30 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
+*.pyd
+
+# cache under src
+src/**/__pycache__/
 
 # C extensions
 *.so
+
+# ────────────── LangChain vectorstore / cache ──────────────
+src/app/db_FAISS/
+src/app/cache/
+src/app/cache\hub/
+src/app/model_cache/
+src/app/embedding_cache/
+
+# ────────────── data dir (e.g. PDF) ──────────────
+src/data/db/
+src/data/un_db/
+
+# ────────────── log/tmp files ──────────────
+*.tmp
+*.out
+*.pid
 
 # Distribution / packaging
 .Python
@@ -25,6 +46,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+.vscode/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -135,6 +157,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+*.env
+*.secret
 
 # Spyder project settings
 .spyderproject

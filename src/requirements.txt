@@ -3,10 +3,23 @@ huggingface_hub
 python-dotenv
 langchain_community
 langchain-text-splitters
+langchain_experimental
 faiss-cpu
 langchain-huggingface
 langchain-openai
+langchain_chroma
 pypdf
+unstructured[pdf]
+# pdf2image
+# pi-heif
+pdfplumber
 numpy==1.26.2
 langsmith
 openai
+fastapi
+uvicorn
+langchain_mcp_adapters>=0.0.7
+mcp[cli]
+langgraph>=0.3.21
+fastapi_mcp
+asyncio
